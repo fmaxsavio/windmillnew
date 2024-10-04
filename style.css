@@ -3,10 +3,19 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Centering everything vertically */
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.panel-container {
+    display: flex; /* Makes panels horizontal */
+    justify-content: space-around; /* Adds space between panels */
+    align-items: flex-start;
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 1200px; /* Optional, for better control */
+    padding: 20px;
 }
 
 .panel {
@@ -17,7 +26,8 @@ body {
     border: 2px solid #000;
     padding: 10px;
     min-height: 200px;
-    width: 100%;
+    width: 30%; /* Adjust the width for each panel */
+    box-sizing: border-box;
 }
 
 #drop-area-panel, #blocks-panel, #question-panel {
