@@ -19,25 +19,27 @@
 
     <!-- Second Page - Game Interface -->
     <div id="game-page" style="display: none;">
-        <div class="panel" id="panel1">
-            <h2>Question</h2>
-            <p>1) Obtain the block diagram of the wind turbine by placing the elements in the correct order.</p>
-        </div>
-        <div class="panel" id="panel2">
-            <h2>Drop Here (Correct Order)</h2>
-            <div id="drop-area"></div>
-            <button id="undo-btn">Undo</button>
-        </div>
-        <div class="panel" id="panel3">
-            <h2>Available Blocks</h2>
-            <div id="blocks">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/windBlades.png" id="windBlades" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/hub.png" id="hub" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/gearBox.png" id="gearBox" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/brake.png" id="brake" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/generator.png.png" id="generator" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/transformer.png" id="transformer" class="draggable" draggable="true">
-                <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/grid.png" id="grid" class="draggable" draggable="true">
+        <div id="panel-container">
+            <div class="panel" id="panel1">
+                <h2>Question</h2>
+                <p>1) Obtain the block diagram of the wind turbine by placing the elements in the correct order.</p>
+            </div>
+            <div class="panel" id="panel2">
+                <h2>Drop Here (Correct Order)</h2>
+                <div id="drop-area"></div>
+                <button id="undo-btn">Undo</button>
+            </div>
+            <div class="panel" id="panel3">
+                <h2>Available Blocks</h2>
+                <div id="blocks">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/windBlades.png" id="windBlades" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/hub.png" id="hub" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/gearBox.png" id="gearBox" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/brake.png" id="brake" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/generator.png.png" id="generator" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/transformer.png" id="transformer" class="draggable" draggable="true">
+                    <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/grid.png" id="grid" class="draggable" draggable="true">
+                </div>
             </div>
         </div>
         <button id="submit-btn">Submit</button>
