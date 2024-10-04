@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Diagram Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="game-page" style="display:none;">
+        <div id="question-panel">
+            <h2>Arrange the blocks in the correct order for the Wind Turbine Diagram</h2>
+        </div>
+
+        <div id="drop-area-panel">
+            <h3>Panel 2 (Drag blocks here)</h3>
+            <div id="drop-area" class="panel"></div>
+            <button id="undo-btn">Undo</button>
+            <button id="submit-btn">Submit</button>
+            <div id="result"></div>
+            <div>Score: <span id="score">0</span></div>
+        </div>
+
+        <div id="blocks-panel">
+            <h3>Panel 3 (Drag blocks from here)</h3>
+            <div id="blocks" class="panel">
+                <img src="images/windBlades.png" id="windBlades" class="draggable" draggable="true">
+                <img src="images/hub.png" id="hub" class="draggable" draggable="true">
+                <img src="images/gearBox.png" id="gearBox" class="draggable" draggable="true">
+                <img src="images/brake.png" id="brake" class="draggable" draggable="true">
+                <img src="images/generator.png" id="generator" class="draggable" draggable="true">
+                <img src="images/transformer.png" id="transformer" class="draggable" draggable="true">
+                <img src="images/grid.png" id="grid" class="draggable" draggable="true">
+                <!-- Extra images -->
+                <img src="images/dcConverter.png" id="dcConverter" class="draggable" draggable="true">
+                <img src="images/acConverter.png" id="acConverter" class="draggable" draggable="true">
+                <img src="images/inverter.png" id="inverter" class="draggable" draggable="true">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
