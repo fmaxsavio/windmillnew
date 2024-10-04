@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block Diagram Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wind Turbine Block Diagram Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- First Page - Login -->
     <div id="login-page">
-        <h2>Login</h2>
+        <h1>Login</h1>
         <form id="login-form">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
+            <input type="text" id="username" placeholder="Enter Username" required><br>
+            <input type="password" id="password" placeholder="Enter Password" required><br>
             <button type="submit">Login</button>
         </form>
     </div>
 
-    <div id="game-page" style="display:none;">
-        <div id="question-panel">
-            <h2>Arrange the blocks in the correct order for the Wind Turbine Diagram</h2>
+    <!-- Second Page - Game Interface -->
+    <div id="game-page" style="display: none;">
+        <div class="panel" id="panel1">
+            <h2>Question</h2>
+            <p>1) Obtain the block diagram of the wind turbine by placing the elements in the correct order.</p>
         </div>
-
-        <div id="drop-area-panel">
-            <h3>Panel 2 (Drag blocks here)</h3>
-            <div id="drop-area" class="panel"></div>
+        <div class="panel" id="panel2">
+            <h2>Drop Here (Correct Order)</h2>
+            <div id="drop-area"></div>
             <button id="undo-btn">Undo</button>
-            <button id="submit-btn">Submit</button>
-            <div id="result"></div>
-            <div>Score: <span id="score">0</span></div>
         </div>
-
-        <div id="blocks-panel">
-            <h3>Panel 3 (Drag blocks from here)</h3>
-            <div id="blocks" class="panel">
+        <div class="panel" id="panel3">
+            <h2>Available Blocks</h2>
+            <div id="blocks">
                 <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/windBlades.png" id="windBlades" class="draggable" draggable="true">
                 <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/hub.png" id="hub" class="draggable" draggable="true">
                 <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/gearBox.png" id="gearBox" class="draggable" draggable="true">
@@ -42,6 +40,9 @@
                 <img src="https://raw.githubusercontent.com/fmaxsavio/windmillnew/refs/heads/main/grid.png" id="grid" class="draggable" draggable="true">
             </div>
         </div>
+        <button id="submit-btn">Submit</button>
+        <span id="result"></span>
+        <p>Score: <span id="score">0</span></p>
     </div>
 
     <script src="script.js"></script>
