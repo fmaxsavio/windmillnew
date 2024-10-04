@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    padding: 10px;
+    min-height: 200px;
+    width: 100%;
+}
+
+#drop-area-panel, #blocks-panel, #question-panel {
+    width: 100%;
+    padding: 10px;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#drop-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    min-height: 200px;
+    border: 2px dashed #333;
+    padding: 10px;
+}
+
+.arrow {
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    margin: 0 5px;
+}
+
+#blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 10px;
+}
